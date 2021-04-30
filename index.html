@@ -4,52 +4,71 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="main.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Lora:wght@500&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-  <title>Homepage Demo</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="main.css">
+  <title>Homepage demo</title>
 </head>
 <body>
-  <header>
-      <div class="logo">
-        this interior
-      </div>
-        <nav>
-          <ul class="nav-links">
-            <li class="active-link link-item">Home</li>
-            <li class="link-item">Collection</li>
-            <li class="link-item">About</li>
-            <li class="link-item">Contact</li>
-          </ul>
-        </nav>
-        <div class="burger">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
-  </header>
-  <main>
-    <div class="description">
-      <h1 class="title">Modern Interior</h1>
-      <p class="text-description">A full-Service residential & commercial interior design and staging company offering professional organizing & eco-services.</p>
-      <button class="btn">Read more</button><span class="icon-arrow"><i class="fas fa-long-arrow-alt-right"></i></span>
+  <div class="mobile-menu">
+    <nav class="mobile--navigation--bar">
+      <a href="" class="mobile-navigation--links">Home</a>
+      <a href="" class="mobile-navigation--links">Collection</a>
+      <a href="" class="mobile-navigation--links">About</a>
+      <a href="" class="mobile-navigation--links">Contact</a>
+    </nav>
+  </div>
+  <div class="container">
+    <header>
+      <div class="logo"><p>this interior</p></div>
+      <nav class="navigation--bar">
+        <a href="" class="navigation--links">Home</a>
+        <a href="" class="navigation--links">Collection</a>
+        <a href="" class="navigation--links">About</a>
+        <a href="" class="navigation--links">Contact</a>
+      </nav>
+    </header>
+    <div class="mobile-menu--header">
+      <div class="logo"><p>this interior</p></div>
+      <button class="hambuger-menu" onclick="openMenu()">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
     </div>
-    <div class="img-description">
-      <img class="image" src="./assets/photo1.png" alt="cover photo demo collection">
-      <div class="comment-overlay">
-        <img src="./assets/photo2.png" alt="profile demo picture">
-        <div class="content">
-          <p class="name">Aliza Webber</p>
-          <p class="profession">Interior designer</p>
-        </div>
-        <p class="asset-description">Designed in 2020 by Aliza Webber</p>
+    <main>
+      <div class="main-description">
+        <h1 class="headline">Modern interior</h1>
+        <p class="description">A full-Service residential & commercial interior design and staging company offering professional organizing & <br> eco-services.</p>
+        <button class="btn">Read more<i class="fa fa-long-arrow-right"></i></button>
       </div>
-    </div>
-  </main>
-  <footer>
-    <p>created by <span class="link"><a href="https://github.com/jasonohdz1501" target="blank">jasondev1501</a></span> - devChallenges.io</p>
-  </footer>
+      <div class="main-image">
+        <div class="image-container">
+          <div class="img--asset">
+            <img src="./assets/photo1.png" alt="cover image">
+          </div>
+          <div class="img--overlay">
+            <div class="profile">
+              <div class="img--profile">
+                <img src="./assets/photo2.png" alt="profile picture">
+              </div>
+              <div class="profile--description--profile">
+                <p>Aliza Webber</p>
+                <p>Interior designer</p>
+              </div>
+            </div>
+            <div class="description-profile">
+              <p>Designed in 2020 by Aliza Webber</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>created by <a href="https://github.com/jasonohdz1501" target="blank">jasondev1501</a> - devChallenges.io</p>
+    </footer>
+  </div>
   <script src="main.js"></script>
-  <script src="https://kit.fontawesome.com/63067e820a.js" crossorigin="anonymous"></script>
 </body>
 </html>

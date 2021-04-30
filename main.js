@@ -1,21 +1,7 @@
-const burger = document.querySelector('.burger');
-const navbar = document.querySelector('nav');
 
-burger.addEventListener('click', mobileMenu);
-
-function mobileMenu (){
-  burger.classList.toggle('active');
-  navbar.classList.toggle('active');
+function openMenu() {
+  const mobile = document.querySelector('.mobile-menu');
+  const barActive = document.querySelectorAll('.bar');
+  mobile.classList.toggle('show-menu-mobile');
+  barActive.forEach(n => n.classList.toggle('active'));
 }
-
-const navItems = document.querySelectorAll('.link-item');
-
-navItems.forEach(n => n.addEventListener('click', closeMenu));
-
-function closeMenu (){
-  burger.classList.remove('active');
-  navbar.classList.remove('active');
-}
-
-
-
